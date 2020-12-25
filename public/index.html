@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pwa1</title>
+		<link rel="manifest" href="Manifest.json">
+		<style>
+			body {
+				background: linear-gradient(90deg, blue 50%, red 50%);
+				color: white;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<label>TousAntiCovid : </label>
+		<label id="lastVersion"></label>
+	</body>
+</html>
+
+<script>
+	const lastVersionLabel = document.getElementById('lastVersion');
+
+	fetch('/lastVersion').then(function(response) {
+		response.json().then(function(json) {
+			if (json.success) {
+				lastVersionLabel.textContent = json.result;
+			} else {
+				alert('Erreur : Impossible de récupérer la version !');
+			}
+		});
+	}).catch(function() {
+		alert('Erreur : Impossible de récupérer la version !');
+	});
+
+	if('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('./sw.js');
+	};
+</script>

@@ -1,0 +1,22 @@
+{
+	"name": "pwa1",
+	"short_name": "pwa1",
+	"description": "pwa1",
+	
+	"start_url": "/",
+	"scope": "/",
+
+	"theme_color": "white",
+	"background_color": "white",
+
+	"orientation": "portrait",
+	"display": "fullscreen",
+
+	"icons": [
+		{
+			"src": "icon_144x144.png",
+			"type": "image/png",
+			"sizes": "144x144"
+		}
+	]
+}
