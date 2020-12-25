@@ -1,13 +1,13 @@
 {
-  "name": "pwa1",
+  "name": "pwa2",
   "version": "1.0.0",
-  "description": "pwa1",
+  "description": "pwa2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "pwa1"
+    "pwa2"
   ],
   "author": "FrancoisBasset",
   "license": "ISC",

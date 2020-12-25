@@ -1,3 +1,3 @@
 module.exports = {
-	Pwa1Controller: require('./Pwa1Controller')
+	Pwa2Controller: require('./Pwa2Controller')
 };
