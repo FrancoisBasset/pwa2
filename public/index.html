@@ -21,7 +21,7 @@
 <script>
 	const lastVersionLabel = document.getElementById('lastVersion');
 
-	fetch('/lastVersion').then(function(response) {
+	fetch('/pwa2/lastVersion').then(function(response) {
 		response.json().then(function(json) {
 			if (json.success) {
 				lastVersionLabel.textContent = json.result;
